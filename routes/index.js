@@ -53,7 +53,7 @@ router.post('/invite', function(req, res) {
 
             res.render('result', {
               community: config.community,
-              message: 'Failed! ' + error,
+              message: 'Failed! ' + error + "\n\n Still having issues? Leave a comment here and I will look into it https://community.oracle.com/thread/4292315",
               isFailed: true
             });
           }
